@@ -1,3 +1,4 @@
+import AdminLayout from "@/components/admin/AdminLayout";
 import {
   Card,
   CardContent,
@@ -13,11 +14,12 @@ import StatsCards from "@/components/admin/StatsCards";
 import BookingChart from "@/components/admin/BookingChart";
 import PopularDishes from "@/components/admin/PopularDishes";
 import RecentActivity from "@/components/admin/RecentActivity";
+import AdminLayout from "@/components/layout/AdminLayout";
 
 const AdminDashboard = () => {
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      <div className="max-w-7xl mx-auto space-y-6">
+    <AdminLayout>
+      <div className="p-6">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div>
@@ -116,7 +118,7 @@ const AdminDashboard = () => {
           </div>
         </div>
       </div>
-    </div>
+    </AdminLayout>
   );
 };
 
